@@ -8,6 +8,10 @@ app.use(bodyParser.urlencoded({extened: true}))
 
 require('./route.js')(app)
 
+app.get('/status', function (req,res){
+    res.send('So sorry nodejs')
+})
+
 
 let port = 8081
 
